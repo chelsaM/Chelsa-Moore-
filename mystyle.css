@@ -8,7 +8,7 @@ h1 {
 
 }
 a{
-    background-color: cornflowerblue;
+    background-color: skyblue;
     font-weight: bolder;
 }
 nav {
@@ -20,17 +20,40 @@ body {
     border-style: dashed;
     padding: 20px;
     margin: 50px;
-    background-color: teal;
+    background-color:  rgb(210, 250, 237);
 }
 #p1 {
-    background-color: yellowgreen;
+    background-color: wheat;
 }
 .pTitle {
-    font-family: cursive;
-    background-color: lightgoldenrodyellow;
+    font-size: 20px;
+    font-family: Georgia
+    
+    background-color: rgb(210, 250, 237);
 }
 
 table{
   font: bold
   
+}
+article {
+    font-size: 18px;
+    font-family: Georgia
+}
+#GoToTop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+@keyframes myAime{
+    from {color: springgreen;}
+    to {color: red;}
+}
+h1 {
+    font-style: oblique;
+    animation-name: myAime;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
 }

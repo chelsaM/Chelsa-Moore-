@@ -2,13 +2,16 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-<title>HTML Fundamentals</title>
+<title>HTML Chelsa's Resume</title>
 <meta name="Author" content="BF Chelsa" />
 <meta name="Description" content="Course teaching the basics of HTML markup" />
 <meta name="keywords" lang="en-us" content="DkVitus, HTML, Vi2sDk" />
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="mystyle.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 <header> 
@@ -32,7 +35,11 @@ Trained Oracle & SQL DBA <br> Certified Scrum Master <br> Professional Web Devel
         <a href="#RefInfo" alt="Go to References Info">References </a> - 
         <a href="#Summary" alt="Go to Summary Info">Summary Info</a> - 
 <nav>
-      
+      <button type="button"
+       onclick="document.getElementById('testId').innerHTML =Date()" > Show Me Date Fool </button>
+<p id="testId">
+  The Date Will Show Here ....
+</p>
     </header>
   
     <section>
@@ -43,7 +50,14 @@ Trained Oracle & SQL DBA <br> Certified Scrum Master <br> Professional Web Devel
           </h2>
         </a>
   
-        - <a href="#TheTop" alt="Go to Top">Back To Top.</a> -
+
+        <form>
+        <label> Name </label>
+        <input type="">
+
+        
+        "></form>
+        - <a href="#TheTop" id="GoToTop" alt="Go to Top">Back To Top.</a> -
         <br />
        
         <h>
@@ -55,7 +69,7 @@ Trained Oracle & SQL DBA <br> Certified Scrum Master <br> Professional Web Devel
             </h2>
           </a>
             
-          - <a href="#TheTop" alt="Go to Top">Back To Top.</a> -        
+          - <a href="#TheTop" alt="GoToTop">Back To Top.</a> -        
           <p id="p1"> 
     Technical Experience Translating business requirements into conceptual, logical and physical data models. Administering, Managing, Developing and configuring Oracle database. Creating the database, table spaces, tables, indexes, setting privileges and user logins
        <p>
@@ -82,6 +96,7 @@ Trained Oracle & SQL DBA <br> Certified Scrum Master <br> Professional Web Devel
   </p>
 <br /> 
 </h>
+<img src="" alt="">
 <strong> 
   Address:
 </strong>
@@ -101,7 +116,7 @@ Trained Oracle & SQL DBA <br> Certified Scrum Master <br> Professional Web Devel
   Email: 
 </strong>
 <br />
-<a href="mailto:bbchelsa@gmail.com" alt="Email Vitus">bbchelsa@gmail.com </a>
+<a href="mailto:bbchelsa@gmail.com" alt="Email Chelsa">bbchelsa@gmail.com </a>
 <br />
 
 <strong> 
@@ -112,7 +127,7 @@ www.bfchelsa.com
 </article>
 </strong>
 <br />
-<a href="http://dkvitus.com" target="_blank" alt="Open Site in New Window">http://dkvitus.com</a>
+<a href="http://www.bfchelsa.com" target="_blank" alt="Open Site in New Window">http://www.bfchelsa.com</a>
 
 </article>
 
@@ -303,7 +318,7 @@ Saving this article since it was moved to the aside with the pic
 - <a href="#TheTop" alt="Go to Top">Back To Top.</a> -
 <br />
 
-  <table>
+  <table class="table table-dark table-hover">
     <caption>
       <!--
         Table Caption
